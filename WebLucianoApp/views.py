@@ -14,3 +14,8 @@ def About(request):
 def Project(request):
 
     return render(request, "WebLucianoApp/project.html")
+
+
+def ContactMe(request):
+
+    return render(request, "WebLucianoApp/contact-me.html")
