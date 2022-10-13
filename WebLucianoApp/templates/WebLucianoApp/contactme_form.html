@@ -1,5 +1,9 @@
 {%extends 'WebLucianoApp/home.html'%}
 {%block title%}<title>Contact Me</title>{%endblock%}
 {%block text%}
-{% csrf_token %} {{form.as_p}}
+<h1>Contact Me</h1>
+<form method="Post">
+    {% csrf_token %} {{form.as_p}}
+    <center><button class="form-button">Publicar</button></center>
+  </form>
 {%endblock%}
