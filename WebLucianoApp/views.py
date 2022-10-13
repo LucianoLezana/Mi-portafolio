@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from WebLucianoApp.models import ContactMe
 from django.views.generic import CreateView
+from WebLucianoApp.forms import FormContactMe
 
 
 
@@ -21,8 +22,8 @@ def Project(request):
 
 class Page_create(CreateView):
     model = ContactMe
-    fields = '__all__'
-    #form_class = PostForm
-    template = 'post_form.html'
+    #fields = '__all__'
+    form_class = FormContactMe
+    template = 'contactme_form.html'
     #context = {'mensaje':'creado'}
     
