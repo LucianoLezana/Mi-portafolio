@@ -16,6 +16,9 @@ def Project(request):
     return render(request, "WebLucianoApp/project.html")
 
 
-def ContactMe(request):
-
-    return render(request, "WebLucianoApp/contact-me.html")
+class Page_create(CreateView):
+    model = ContactMe
+    #form_class = PostForm
+    template = 'post_form.html'
+    #context = {'mensaje':'creado'}
+    
