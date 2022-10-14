@@ -2,8 +2,8 @@
 {%block title%}<title>Contact Me</title>{%endblock%}
 {%block text%}
 <h1>Contact Me</h1>
-<form method="Post">
-    {% csrf_token %} {{form.as_p}}
-    <center><button class="form-button">Publicar</button></center>
-  </form>
+    <form method="Post">
+        {% csrf_token %} {{form.as_p}}
+        <center><small><button class="btn btn-primary btn-xl-1 rounded-pill mt-3">Send</button></small></center>
+    </form>
 {%endblock%}
